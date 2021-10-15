@@ -1,4 +1,4 @@
-# E41201328_VEDA NADIRA_INTENT
+# E41201328_MOBILE_INTENT
  For Mobile Task P7
 Features (Explicit with data "name", Implicit map + send message)
 
