@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/shape"
+        android:elevation="30dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profil"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="230dp"
+            android:layout_height="60dp"
+            android:elevation="10dp"
+            android:src="@drawable/jungwon" />
+
+        <TextView
+            android:id="@+id/txt_result"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#99B3FF"
+            android:fontFamily="@font/poppins"/>
+
+        <TextView
+            android:id="@+id/txt_schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this is your schedule"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/txt_result"
+            android:textColor="#99B3FF"
+            android:fontFamily="@font/poppins"/>
+
+        <TextView
+            android:text="today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/txt_schedule"
+            android:textColor="#99B3FF"
+            android:fontFamily="@font/poppins"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_above="@+id/kedua"
+        android:layout_alignTop="@+id/kedua"
+        android:layout_marginTop="-124dp"
+        android:layout_marginBottom="-81dp">
+
+        <TextView
+            android:id="@+id/txt_telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="6dp"
+            android:text="Messages"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/no_telp"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_telp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/texthome"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_kirim"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_telp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="-128dp"
+            android:background="@drawable/send"
+            android:onClick="smsSend"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kedua"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="-99dp"
+        android:layout_marginTop="-87dp"
+        android:layout_marginBottom="146dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="6dp"
+            android:text="Location"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:fontFamily="@font/poppins"/>
+
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_loc"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/texthome"
+            android:drawableStart="@drawable/search_icon" /> />
+
+        <ImageButton
+            android:id="@+id/cari_alamat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alamat"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="-128dp"
+            android:background="@drawable/search"
+            android:onClick="carimap"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
